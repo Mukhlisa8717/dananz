@@ -1,0 +1,44 @@
+@import '../../../global';
+
+.contact{
+    display: flex;
+    width: 1300px;
+    height: 180px;
+    background-color: $blue;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 110px;
+    &__cont{
+        display: flex;
+        width: 80%;
+        height: 75%;
+        align-items: center;
+        justify-content: space-around;
+        gap: 153px;
+        &-title{
+            @include h2;
+            color: white;
+            font-size: 30px;
+        }
+        &-right{
+            display: flex;
+            flex-wrap: wrap;
+            width: 38%;
+            height: 100%;
+            .contact__cont-text{
+                color: $prgr;
+                font-family: $font;
+            }
+            .contact__cont-btn{
+                @include btn;
+                background-color: white;
+                color: $text;
+            }
+            .contact__cont-btn:hover{
+                color: white;
+                background-color: $text;
+            }
+        }
+    }
+}

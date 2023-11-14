@@ -1,0 +1,125 @@
+@import '../../../global';
+
+.header{
+    width: 1300px;
+    height: 800px;
+    margin: 0 auto;
+    &__nav{
+        display: flex;
+        width: 100%;
+        height: 9%;
+        padding: 0 100px;
+        &-logo{
+            display: flex;
+            width: 35%;
+            height: 100%;
+            justify-content: start;
+            align-items: end;
+        }
+        &-list{
+            display: flex;
+            width: 50%;
+            height: 100%;
+            justify-content: space-around;
+            align-items: center;
+            list-style: none;
+            padding-left: 60px;
+            padding-top: 20px;
+            .header__nav-pogination{
+                text-decoration: none;
+                color: $text;
+                font-family: $font;
+                font-size: 14px;
+            }
+            .header__nav-pogination:hover{
+                font-weight: 600;
+            }
+        }
+        &-btn{
+            display: flex;
+            width: 15%;
+            height: 100%;
+            justify-content: end;
+            align-items: end;
+            .header__nav-button{
+                @include btn
+            }
+            .header__nav-button:hover{
+                background-color: white;
+                color: $blue;
+            }
+        }
+    }
+    &__hero{
+        width: 100%;
+        height: 91%;
+        padding: 0 100px;
+        &-top{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            height: 45%;
+            align-items: center;
+            position: relative;
+            .hero__top-title{
+                font-family: $font;
+                color: $text;
+                font-weight: 900;
+                font-size: 52px;
+            }
+            .hero__top-line{
+                width: 55%;
+                height: 1px;
+                position: absolute;
+                top: 80px;
+                right: 0;
+                border: 1px solid #000000;
+            }
+            .header__hero-box{
+                display: flex;
+                width: 180px;
+                height: 389px;
+                border: 1px solid;
+                position: absolute;
+                bottom: -208px;
+                right: 167px;
+                background-color: $blue;
+                justify-content: center;
+                align-items: center;
+                .header__hero-list{
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 75%;
+                    height: 82%;
+                    list-style: none;
+                    .header__hero-item{
+                        display: flex;
+                        flex-wrap: wrap;
+                        width: 100%;
+                        height: 26%;
+                        justify-content: center;
+                        .hero__item-title{
+                            font-family: $font;
+                            color: white;
+                            font-weight: 400;
+                            font-size: 35px;
+                        }
+                        .hero__item-subtitle{
+                            color: #FFFFFF;
+                            font-family: $font;
+                            font-size: 11px;
+                        }
+                    }
+                }
+            }
+        }
+        &-bottom{
+            width: 100%;
+            height: 55%;
+            .hero__bottom-img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

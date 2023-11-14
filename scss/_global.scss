@@ -1,0 +1,42 @@
+$border: 1px solid;
+$blue: #2C3878;
+$text: #333333;
+$prgr: #9C9C9C;
+$font: 'Poppins', sans-serif;
+
+@mixin h2{
+    color: #333333;
+    font-family: 'Poppins', sans-serif;
+    font-size: 34px;
+}
+
+@mixin btn{
+    width: 130px;
+    height: 45px;
+    border: 1px solid #333333;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color: $blue;
+}
+
+@mixin hr{
+    width: 480px;
+    height: 1px;
+    border: 1px solid black;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    width: 100%;
+}
+
+.main{
+    width: 1300px;
+    margin: 100px auto;
+    padding: 0 120px;
+}

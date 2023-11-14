@@ -1,0 +1,67 @@
+@import '../../../global';
+
+.product{
+    width: 100%;
+    height: 750px;
+    margin-top: 130px;
+    &__top{
+        width: 100%;
+        height: 22%;
+        position: relative;
+        &-name{
+            font-family: $font;
+            font-weight: 600;
+        }
+        &-line{
+            @include hr;
+            position: absolute;
+            top: 11px;
+            left: 85px;
+        }
+        &-title{
+            @include h2;
+        }
+        &-text{
+            color: $prgr;
+            font-family: $font;
+            position: absolute;
+            top: 38px;
+            right: 0;
+        }
+    }
+    &__list{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 78%;
+        list-style: none;
+        .product__item{
+            position: relative;
+            flex: 1;
+            &-title{
+                display: flex;
+                width: 30%;
+                height: 40%;
+                .product__title-num{
+                    @include h2;
+                }
+                .product__title-text{
+                    @include h2;
+                    margin-left: 80px;
+                }
+            }
+            &-text{
+                font-family: $font;
+                color: $text;
+                margin-left: 115px;
+                margin-top: 12px;
+            }
+            .fa-arrow-right{
+                position: absolute;
+                top: 15px;
+                right: 20px;
+                font-size: 20px;
+            }
+        }
+    }
+}

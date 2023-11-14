@@ -1,0 +1,79 @@
+@import '../../../global';
+
+.footer{
+    display: flex;
+    width: 1300px;
+    height: 350px;
+    margin: 0 auto;
+    padding: 80px 120px;
+    &__left{
+        width: 62%;
+        height: 100%;
+        &-title{
+            @include h2;
+            font-size: 28px;
+        }
+    }
+    &__right{
+        display: flex;
+        flex-wrap: wrap;
+        width: 38%;
+        height: 100%;
+        justify-content: start;
+        position: relative;
+        &-label{
+            font-family: $font;
+            color: $text;
+        }
+        &-input{
+            width: 100%;
+            height: 40px;
+            outline: none;
+            border: none;
+            margin-top: 10px;
+        }
+        .fa-arrow-right{
+            position: absolute;
+            top: 43px;
+            right: 0px;
+            font-size: 20px;
+        }
+        &-line{
+            width: 100%;
+            height: 1px;
+            border: 1px solid #141414;
+            position: absolute;
+            top: 77px;
+        }
+        &-socials{
+            display: flex;
+            flex-wrap: wrap;
+            width: 50%;
+            height: 40%;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            .footer__socials-text{
+                color: $text;
+                font-family: $font;
+            }
+            .footer__socials-list{
+                display: flex;
+                width: 100%;
+                height: 50%;
+                list-style: none;
+                justify-content: space-around;
+                .footer__socials-item{
+                    display: flex;
+                    width: 20%;
+                    height: 100%;
+                    border-radius: 50px;
+                    background-color: #D9D9D9;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+}
